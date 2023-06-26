@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&family=Press+Start+2P&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Press Start 2P', cursive;
+*/
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+/*HEADER*/
+#logo {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+#jslogo {
+    display: flex;
+    position: absolute;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+#aplogo {
+    display: flex;
+    position: absolute;
+    margin-left: 100px;
+    width: 110px;
+    height: 40px;
+}
+
+.h-h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+
+}
+
+#flechita {
+    position: absolute;
+    width: 2vw;
+    margin-top: 1vh;
+    margin-left: 11vw;
+}
+
+.h-p {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    display: flex;
+    margin-left: 13vw;
+}
+
+#colorbar {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 19vw;
+    margin-top: -2vh;
+}
+
+/*MAIN*/
+
+.m-h2-1 {
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 35px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.m-p-1 {
+    display: flex;
+    margin-left: 27vw;
+    width: 46vw;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+#colorbar2 {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    position: relative;
+    margin-left: 19vw;
+    margin-top: 6vh;
+}
+
+.m-h1-1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.m-h2-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.m-ul {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    list-style: square;
+}
+
+/*FOOTER*/
+#logoinstagram {
+
+    width: 25px;
+    margin-top: 17vh;
+    margin-left: 45vw;
+}
+
+#enlaceig {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+#colorbarf {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 36vw;
+    margin-top: 1vh;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+
+    #flechita {
+            position: absolute;
+            width: 2vw;
+            margin-top: 2vh;
+            margin-left: 22vw;
+        }
+    
+        .h-p {
+            font-family: 'Inter', sans-serif;
+            position: absolute;
+            display: flex;
+            margin-left: 24.2vw;
+            font-size: 13px;
+            margin-top: 2vh;
+        }
+    
+    .m-p-1 {
+        margin-left: 1vw;
+        width: 95vw;
+    }
+
+    .m-h2-1 {
+        display: flex;
+        justify-content: center;
+        margin-left: 0vw;
+    }
+
+    #colorbar {
+        width: 63vw;
+    }
+
+    #colorbar2 {
+        width: 63vw;
+    }
+
+    #colorbarf {
+        width: 63vw;
+    }
+
+    #logoinstagram {
+        margin-left: 40vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #flechita {
+        position: absolute;
+        width: 2vw;
+        margin-top: 2vh;
+        margin-left: 27vw;
+    }
+
+    .h-p {
+        font-family: 'Inter', sans-serif;
+        position: absolute;
+        display: flex;
+        margin-left: 29vw;
+        font-size: 13px;
+        margin-top: 1.8vh;
+    }
+    }
+
+@media (max-width: 425px) {
+    header {
+        height: 12vh;
+    }
+
+        #flechita {
+            display: none;
+        }
+    
+        .h-p {
+            display: none;
+        }
+
+    .h-h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        position: relative;
+        margin-top: 6vh;
+    }
+
+    .m-h2-1 {
+        display: none;
+    }
+
+    main {
+        flex-direction: row;
+        margin-top: 6vh;
+    }
+
+    .m-p-1 {
+        display: flex;
+        margin-left: 0vw;
+        width: 95vw;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+
+    #colorbar {
+        display: none;
+    }
+
+    #colorbar2 {
+        width: 63vw;
+    }
+
+    #colorbarf {
+        width: 62vw;
+    }
+
+    html {
+        height: 143vh;
+    }
+
+}
+
+@media (max-width: 361px) {
+    header {
+        height: 12vh;
+    }
+
+    .h-h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        position: relative;
+        margin-top: 6vh;
+    }
+
+    .m-h2-1 {
+        display: none;
+    }
+
+    main {
+        flex-direction: row;
+        margin-top: 7vh;
+    }
+
+    .m-p-1 {
+        display: flex;
+        margin-left: 0vw;
+        width: 95vw;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+
+    #colorbar {
+        display: none;
+    }
+    
+    #colorbar2 {
+        width: 63vw;
+    }
+    
+    #colorbarf {
+        width: 62vw;
+    }
+
+    html {
+        height: 143vh;
+    }
+
+    #enlaceig {
+        font-family: 'Inter', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
+

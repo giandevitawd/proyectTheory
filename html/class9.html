@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleclass9.css">
+    <title>Proyect THEORY</title>
+</head>
+
+<body>
+
+    <header>
+        <hr>
+        <img id="logo" src="/img/trescirculos.jpg" alt="trescirculos">
+        <img id="jslogo" src="/img/jslogo.png" alt="javascript">
+        <a href="https://aprendeprogramando.bue.edu.ar/" target="_blank"><img id="aplogo" src="/img/aplogo.png"
+                alt="aplogo"></a>
+        <h1 class="h-h1"><a href="/index.html">Proyect THEORY</a>:</h1>
+        <img src="/img/flechitaparalaizq .jpg" alt="Flechita" id="flechita">
+        <p class="h-p">clickeá acá para volver a la página principal</p>
+        <img id="colorbar" src="/img/barradecolores.png" alt="barradecolores">
+    </header>
+
+    <main>
+        <h1 class="m-h1-1">CLASS 9</h1>
+        <h2 class="m-h2-1">DOM e implementación de atributos de manera dinámica:
+            :</h2>
+
+        <section>
+            <h3 class="m-h3-1">.createElement:</h3>
+            <p class="m-p-1"><strong>createElement</strong> es un método en JavaScript que se utiliza para <strong>crear un nuevo
+                    elemento HTML</strong>. Permite crear elementos como div, p, span, entre otros, de forma dinámica
+                desde el código JavaScript.
+                <br>
+                La sintaxis básica para utilizar createElement es la siguiente:
+                <br><strong>document.createElement(nuevoElemento);</strong>
+                
+                <br>
+                En donde “nuevoElemento" es el nombre del elemento HTML que
+                deseas crear. Por
+                ejemplo, si deseas crear un nuevo elemento div, puedes hacerlo de la siguiente manera:
+                <br>
+                const nuevoDiv = document.createElement('div');
+                <br>
+                Una vez que hayas creado el elemento, puedes manipularlo y agregarlo a tu página web utilizando otros
+                métodos, como
+                appendChild() para añadirlo como hijo de otro elemento existente.
+                <br>
+                Ahora bien, nuevoDiv, por el momento, es sólo una variable para nuestro programa y no está conectado al
+                DOM o no está
+                insertado en nuestro archivo HTML. Para poder ver si efectivamente el elemento existe y si forma parte
+                del código HTML,
+                podemos utilizar el método “isConnected”. <strong>isConnected</strong>  es una propiedad booleana en JavaScript que se
+                utiliza para
+                verificar si un elemento HTML está conectado o adjunto al árbol del documento.
+                <br>
+                La propiedad isConnected devuelve <strong>true</strong> si el elemento está conectado al árbol del documento, lo que
+                significa que está
+                presente en la estructura de la página web y se encuentra disponible para su interacción. Por otro lado,
+                si el elemento
+                no está conectado, la propiedad isConnected devuelve <strong>false</strong>.<br>
+                Puedes utilizar la propiedad isConnected para <strong>verificar si un elemento ha sido eliminado</strong> del árbol del
+                documento o si
+                aún está presente en la página. Esto puede ser útil, por ejemplo, para realizar acciones o ejecutar
+                código dependiendo
+                de si un elemento está visible en el documento o no.
+                <br>
+                Pero antes de verificar esta conexión, vamos a crear elementos desde Javascript. Te invitamos a ver la
+                siguiente
+                presentación para ver cómo lograrlo, y también, para chequear su conexión.
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1aV1MQ21R-Y5CeCKKoiS50CYLqTekzioIMnJyQax-1hE/view"
+                    target="_blank">Powerpoint -
+                    Repaso y DOM avanzado</a>
+        </section>
+
+        <section>
+            <h3 class="m-h3-2">Repasamos appendChild:</h3>
+            <p class="m-p-2"><strong>appendChild</strong> es un método que se utiliza en JavaScript para <strong>agregar un nuevo elemento</strong> (nodo)
+                como hijo de otro elemento existente en el DOM (Documento de Objetos del Modelo). Lo importante a tener
+                en cuenta con este método es que el nuevo elemento que se agregue se suma al final de una lista de
+                elementos contenidos en un “padre". En la siguiente presentación conocerás su estructura y ejemplos de
+                uso.
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1AtjuqoLG7JTHvohpiUXbkbv4B5lBjwxzE-QInZ26bWQ/view"
+                    target="_blank">GoogleSlides - Agregar atributos de forma dinámica</a>
+            </p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-3">Eliminado elementos desde JavaScript:</h3>
+            <p class="m-p-3">Así como se pueden crear nuevos nodos o elementos HTML a partir de métodos en JavaScript,
+                también podemos eliminarlos, o
+                en algunos casos, vaciarlos. El método <strong>remove()</strong> es una función en JavaScript que se utiliza para <strong>eliminar un elemento del árbol DOM</strong>. Permite eliminar un elemento HTML y todos sus descendientes del
+                documento web. La sintaxis básica del método remove() es la siguiente:
+                <br>
+                <strong>elemento.remove();</strong>
+                <br>
+                Donde elemento es la referencia al elemento que se desea eliminar.
+                <br>
+                Al llamar al método remove() en un elemento, este se elimina completamente del DOM, lo que implica que
+                ya no será
+                visible en la página web y se eliminarán todos los eventos y datos asociados a él.
+                <br>
+                Otra manera de <strong>“hacer invisibles”</strong> elemento del HTML es simplemente <strong>mostrándolos vacíos sin que dejen de
+                existir</strong>. Para
+                entenderlo mejor, repasemos .innerHTML: Es una propiedad que representa el contenido HTML dentro de un
+                elemento. Permite
+                acceder y modificar el contenido HTML interno de un elemento, incluyendo etiquetas, texto y otros
+                elementos HTML
+                anidados. Al asignar un valor a `innerHTML`, se reemplaza todo el contenido anterior del elemento. Por
+                ejemplo, el
+                contenido de un elemento p es un texto. Lo que podemos hacer con esta propiedad es modificar el texto
+                que contiene ese
+                elemento desde Javascript. En el caso de que queramos eliminar un texto de nuestro sitio podemos
+                utilizar el método
+                .remove() para remover el
+                p pero debemos tener en cuenta que el elemento dejará de existir y si de ser necesario, debe ser creado
+                nuevamente.
+                Otra manera es simplemente completar con un texto vacío, es decir, darle un contenido vacío.
+                <br>
+                Para ver el ejemplo de ambos casos, te invitamos a ver la siguiente presentación.
+                <br><br>
+                <a href="https://drive.google.com/file/d/1fr5WjkxGq3QvROOgnH98KMkbzQxRSl9ZBdfHmAg6SrA/view" target="_blank">GoogleSlides
+                    - Repaso y DOM avanzado 2</a>
+
+            </p>
+        </section>
+
+            <div id="button-up">
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+
+    </main>
+
+    <footer>
+        <img src="/img/instagram.png" alt="logo instagram" id="logoinstagram">
+
+        <a href="https://www.instagram.com/gianndevita/" target="_blank" id="enlaceig">the creator</a>
+
+        <img id="colorbarf" src="/img/barradecolores.png" alt="barradecolores">
+    </footer>
+
+        <script src="/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/1291310e13.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

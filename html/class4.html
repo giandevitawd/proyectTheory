@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleclass4.css">
+    <title>Proyect THEORY</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <img id="logo" src="/img/trescirculos.jpg" alt="trescirculos">
+        <img id="jslogo" src="/img/jslogo.png" alt="javascript">
+        <a href="https://aprendeprogramando.bue.edu.ar/" target="_blank"><img id="aplogo" src="/img/aplogo.png" alt="aplogo"></a>
+        <h1 class="h-h1"><a href="/index.html">Proyect THEORY</a>:</h1>
+        <img src="/img/flechitaparalaizq .jpg" alt="Flechita" id="flechita">
+        <p class="h-p">clickeá acá para volver a la página principal</p>
+        <img id="colorbar" src="/img/barradecolores.png" alt="barradecolores">
+    </header>
+
+    <main>
+        <h1 class="m-h1-1">CLASS 4</h1>
+
+        <section>
+            <h2 class="m-h3-1">Funciones:</h2>
+            <p class="m-p-1">Las <strong>funciones</strong> nos permiten <strong>empaquetar o agrupar líneas de código</strong> para poder utilizarlas
+                <strong>múltiples veces</strong> sin generar repetición inecesaria. También nos permite dinamizar código.
+                <br>
+                Las funciones se crean utilizando la palabra reservada <strong>function</strong>, tienen un nombre, llevan un paréntesis
+                y utiliza llaves para poner las líneas de código que pertenecen a la función.
+                <br>
+                Para ejecutar la función simplemente tenemos que escribir el nombre de la función seguido por <strong>()</strong>.
+            </p>
+            <div class="m-img-1">
+                <img src="/img/ejemplo-function.JPG" alt="ejemplofuncion" id="ejemplofunction">
+                <img src="/img/llamadaalafuncion.JPG" alt="" id="llamadaalafunction">
+            </div>
+        </section>
+
+        <section>
+            <h3 class="m-h3-2">Otras maneras de declarar a las funciones:</h3>
+            <ul class="m-ul-1">
+                <li><strong>Guardar la función con nombre en una variable:</strong> Consiste en crear una variable y
+                    asignarle una función. Este método se presta a confusión porque cuando llamamos a la función tenemos
+                    que hacerlo por el nombre de la variable y no por su propio nombre. En este ejemplo la llamada es
+                    suma().</li>
+                    <img src="/img/Guardarlafunciónconnombreenunavariable.JPG"
+                        alt="Guardar la función con nombre en una variable" id="ul-img-1">
+                
+
+                <li><strong>Declarar una función anónima:</strong> Consiste en declarar una función sin nombre. A esta
+                    función si la tenemos que guardar en una variable para poder llamarla después.
+                    <img src="/img/funcionanonimaJPG.JPG" alt="función anonima" id="ul-img-2">
+                </li>
+
+                <li><strong>Función flecha o Arrow function:</strong> A partir de la revisión ES6 de Js se agregó una
+                    forma abreviada de declarar funciones anónimas, las arrow function. También las guardamos en
+                    variables pero reemplazamos la palabra reservada function por una flecha =>. Es la manera
+                    recomendada en la mayoría de los casos.
+                    <img src="/img/arrowfunction.JPG" alt="Arrow function" id="ul-img-3">
+                </li>
+            </ul>
+        </section>
+
+        <section class="m-s-3">
+            <h3 class="m-h3-3">Return:</h3>
+            <p class="m-p-2">La palabra <strong>"Return"</strong> en el ejemplo de a continuación, va a hacer que esa función devuelva
+                siempre el string "Hola" y el nombre que reciba concatenado.</p>
+            <img src="/img/return.JPG" alt="return" id="imgreturn">
+        </section>
+
+        <section class="m-s-4">
+            <h3 class="m-h3-4">Callback:</h3>
+            <p class="m-p-3">Los <strong>callbacks</strong> (a veces denominados funciones callback) son un tipo de funciones que se
+                pasan por parámetro a otras
+                funciones. El objetivo de esto es tener una forma más legible de escribir funciones, más cómoda y
+                flexible para
+                reutilizarlas.
+                Veamos un ejemplo en código a continuación:</p>
+            <img src="/img/callback.JPG" alt="callback" id="imgcallback">
+            <p class="m-p-4">Como vemos la función saludar() se pasa como parámetro a procesarIngreso() y una vez
+                llamada la primera se ejecuta la que fue pasada como parámetro.</p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-5">Scope:</h3>
+            <p class="m-p-5">En la programación, según donde declaremos una variable, podemos determinar dónde se va a
+                utilizar dicha variable, esto se conoce como ámbitos de la <strong>variable</strong> o <strong>scope</strong>.
+                <br>
+                Dependiendo del lugar de creación, identificamos a las variables en dos tipos:
+            <ul class="m-ul-2">
+                <li><strong>Variables globales:</strong> si una variable se declara fuera de cualquier función o bloque,
+                    automáticamente se transforma en variable global.
+                    <br>
+                    Usamos variables globales cuando queremos emplearlas en distintos bloques del programa.
+                </li>
+                <li><strong>Variables locales:</strong> cuando definimos una variable dentro de una función o bloque, la
+                    identificamos como una variable local, y será accesible
+                    sólo dentro de ese espacio. Si quisiéramos utilizarla por fuera, la variable no existirá para el
+                    intérprete.
+                    <br>
+                    Usamos variables locales cuando sólo son necesarias para la función o estructura actual.
+                </li>
+            </ul>
+            </p>
+        </section>
+
+    <div id="button-up">
+        <i class="fa-solid fa-caret-up"></i>
+    </div>
+
+    </main>
+
+    <footer>
+        <img src="/img/instagram.png" alt="logo instagram" id="logoinstagram">
+
+        <a href="https://www.instagram.com/gianndevita/" target="_blank" id="enlaceig">the creator</a>
+
+        <img id="colorbarf" src="/img/barradecolores.png" alt="barradecolores">
+    </footer>
+
+        <script src="/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/1291310e13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

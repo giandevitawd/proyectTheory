@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleclass10.css">
+    <title>Proyect THEORY</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <img id="logo" src="/img/trescirculos.jpg" alt="trescirculos">
+        <img id="jslogo" src="/img/jslogo.png" alt="javascript">
+        <a href="https://aprendeprogramando.bue.edu.ar/" target="_blank"><img id="aplogo" src="/img/aplogo.png"
+                alt="aplogo"></a>
+        <h1 class="h-h1"><a href="/index.html">Proyect THEORY</a>:</h1>
+        <img src="/img/flechitaparalaizq .jpg" alt="Flechita" id="flechita">
+        <p class="h-p">clickeá acá para volver a la página principal</p>
+        <img id="colorbar" src="/img/barradecolores.png" alt="barradecolores">
+    </header>
+
+    <main>
+        <h1 class="m-h1-1">CLASS 10</h1>
+        <h2 class="m-h2-1">Eventos, target y capturar eventos desde el teclado:</h2>
+
+        <section>
+            <h3 class="m-h3-1">Eventos:</h3>
+            <p class="m-p-1">En JavaScript, un <strong>evento</strong> es una <strong>acción o suceso que ocurre en un
+                    elemento del DOM</strong> (Document Object Model) y que puede ser <strong>detectado y controlado
+                    mediante código</strong>. Los eventos pueden ser generados
+                por el usuario, como hacer clic en un botón, mover el mouse, escribir en un campo de texto, o pueden ser
+                generados automáticamente por el navegador, como
+                cargar la página o cambiar el tamaño de la ventana.
+                <br>
+                Cuando ocurre un evento en un elemento, JavaScript <strong>puede ejecutar una función específica
+                    asociada a ese
+                    evento</strong>. Estas
+                funciones se conocen como <strong>"manejadores de eventos"</strong> o <strong>"event
+                    listeners"</strong>. Los event listeners se encargan
+                de <strong>escuchar y
+                    responder a los eventos ocurridos en un elemento específico.</strong>
+                <br>
+                El uso de eventos en JavaScript permite <strong>interactuar</strong> con el usuario,
+                <strong>capturar</strong> acciones y comportamientos,
+                y <strong>ejecutar</strong>
+                acciones personalizadas en respuesta a estos eventos siendo éstos fundamentales en la programación web
+                para crear
+                interactividad y dinamismo en las aplicaciones y sitios web.
+                <br>
+            </p>
+            <ul class="m-ul-1"> Los eventos a escuchar son:
+                <li><strong>blur:</strong> Cuando el elemento pierde el foco.</li>
+                <li><strong>click:</strong> El usuario hace clic sobre el elemento.</li>
+                <li><strong>dblclick:</strong> El usuario hace doble clic sobre el elemento.</li>
+                <li><strong>focus:</strong> El elemento gana el foco.</li>
+                <li><strong>keydown:</strong> El usuario presiona una tecla.</li>
+                <li><strong>keypress:</strong> El usuario presiona una tecla y la mantiene pulsada.</li>
+                <li><strong>keyup:</strong> El usuario libera la tecla.</li>
+                <li><strong>load:</strong> El documento termina su carga.</li>
+                <li><strong>mousedown:</strong> El usuario presiona el botón del ratón en un elemento.</li>
+                <li><strong>mousemove:</strong> El usuario mueve el puntero del ratón sobre un elemento.</li>
+                <li><strong>mouseout:</strong> El usuario mueve el puntero fuera de un elemento.</li>
+                <li><strong>mouseover:</strong> El usuario mantiene el puntero sobre un elemento.</li>
+                <li><strong>mouseup:</strong> El usuario libera el botón pulsado del ratón sobre un elemento.</li>
+                <li><strong>unload:</strong> El documento se descarga, bien porque se cierra la ventana, bien porque se
+                    navega a otra página.</li>
+            </ul>
+            <p class="m-p-2">
+                <br>
+                Esto no significa que se utilicen todos ellos pero es importante saber que existen y que están como
+                recursos
+                por si
+                precisamos generar acciones sobre estas interacciones del usuario. Para conocer más sobre este tema y
+                ver
+                ejemplos
+                prácticos te invitamos a ver la siguiente presentación.
+                <br><br>
+                <a href="https://drive.google.com/file/d/1t9ScJAiQLZjXm1PgYoWcwZ0iTyAg9_i5/view"
+                    target="_blank">Powerpoint - Eventlisteners</a>
+            </p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-2">Target:</h3>
+            <p class="m-p-3">En JavaScript, el objeto event.target se refiere al elemento en el cual se originó un
+                evento. Cuando se utiliza un event listener, el valor de event.target es el elemento HTML específico que
+                disparó el evento.
+                <br>
+                Por ejemplo, si tienes un event listener en un botón y haces clic en ese botón, event.target será una
+                referencia al
+                propio botón. Esto te permite acceder y manipular las propiedades y atributos del elemento específico
+                que activó el
+                evento. Para ver cómo es su uso y como cambiar atributos y propiedades te invitamos a ver la siguiente
+                presentación.
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1VYXkLSwmJn3hZdff3p2Ote-L7xUPqeVj/view"
+                    target="_blank">Powerpoint - Target</a>
+            </p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-3">Eventos de teclado:</h3>
+            <p class="m-p-4">En JavaScript, se pueden capturar eventos del teclado utilizando los event listeners
+                adecuados. Algunos de los eventos del teclado más comunes son:</p>
+            <ul class="m-ul-1">
+                <li><strong>keydown:</strong> Se dispara cuando una tecla se presiona y se mantiene presionada.</li>
+                <li><strong>keyup:</strong> Se dispara cuando se suelta una tecla después de haberla presionado.</li>
+                <li><strong>keypress:</strong> Se dispara cuando se presiona y se suelta una tecla.</li>
+            </ul>
+            <p class="m-p-5">Pueden ser interacciones sencillas pero sumamente útiles para funcionalidad del sitio web.
+                Te mencionamos algunos
+                ejemplos donde se pueden aprovechar:</p>
+            <ul class="m-ul-2">
+                <li><strong>Validación de formulario:</strong> Puedes utilizar estos eventos para realizar validaciones
+                    en tiempo real en los campos de formulario mientras el usuario escribe. Por ejemplo, puedes
+                    verificar si un campo de código postal es válido después de que el usuario presione una tecla
+                    (keydown) o cuando la tecla se suelte (keyup).</li>
+                <li><strong>Búsqueda de productos:</strong> Puedes utilizar el evento keydown para capturar cuando el
+                    usuario presiona la tecla "Enter" después de ingresar un término de búsqueda. De esta manera, puedes
+                    realizar la búsqueda de productos en el sitio web y mostrar los resultados
+                    correspondientes.</li>
+                <li><strong>Filtros de productos:</strong> Si tienes filtros interactivos en tu sitio web de comercio
+                    electrónico, como filtros por precio, talla o color, puedes utilizar los eventos keydown, keyup o
+                    keypress para detectar cuando el usuario interactúa con esos filtros y aplicar los cambios en tiempo
+                    real.</li>
+                <li><strong>Navegación por teclado:</strong> Puedes utilizar estos eventos para mejorar la accesibilidad
+                    de tu sitio web de comercio electrónico, permitiendo a los usuarios navegar por los productos y las
+                    páginas utilizando las teclas de flecha o atajos de teclado específicos.</li>
+                <li><strong>Carrito de compras:</strong> Puedes utilizar estos eventos para permitir al usuario agregar
+                    o eliminar elementos del carrito de compras utilizando atajos de teclado. Por ejemplo, al presionar
+                    una combinación de teclas, se puede agregar un producto específico al carrito sin tener que hacer
+                    clic en el botón correspondiente.</li>
+            </ul>
+            <p class="m-p-6">La elección de qué evento utilizar y cómo aprovecharlo dependerá de las necesidades
+                específicas de tu
+                sitio web y la
+                interacción que deseas lograr con los usuarios.
+                <br>
+                Para conocer su estructura y verlo en un ejemplo te invitamos a ver la siguiente presentación.
+                <br><br>
+                <a href="https://drive.google.com/file/d/1yc0_9hsJUkGNQROFJoCtlhLuhU14H8mU/view" target="_blank">Powerpoint -
+                    e.KeyCode</a>
+            </p>
+        </section>
+
+            <div id="button-up">
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+    </main>
+
+    <footer>
+        <img src="/img/instagram.png" alt="logo instagram" id="logoinstagram">
+
+        <a href="https://www.instagram.com/gianndevita/" target="_blank" id="enlaceig">the creator</a>
+
+        <img id="colorbarf" src="/img/barradecolores.png" alt="barradecolores">
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1291310e13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

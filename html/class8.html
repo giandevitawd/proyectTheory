@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleclass8.css">
+    <title>Proyect THEORY</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <img id="logo" src="/img/trescirculos.jpg" alt="trescirculos">
+        <img id="jslogo" src="/img/jslogo.png" alt="javascript">
+        <a href="https://aprendeprogramando.bue.edu.ar/" target="_blank"><img id="aplogo" src="/img/aplogo.png"
+                alt="aplogo"></a>
+        <h1 class="h-h1"><a href="/index.html">Proyect THEORY</a>:</h1>
+        <img src="/img/flechitaparalaizq .jpg" alt="Flechita" id="flechita">
+        <p class="h-p">clickeá acá para volver a la página principal</p>
+        <img id="colorbar" src="/img/barradecolores.png" alt="barradecolores">
+    </header>
+
+    <main>
+
+        <h1 class="m-h1-1">CLASS 8</h1>
+        <h2 class="m-h2-1">DOM:</h2>
+
+        <section>
+            <h3 class="m-h3-1">El DOM:</h3>
+            <p class="m-p-1">El <strong>DOM</strong>
+                (Document Object Model) es una estructura jerárquica que representa un documento
+                HTML o XML en una página web.
+                Básicamente, el DOM es una <strong>representación del contenido de una página web en forma de árbol de nodos</strong>, donde cada elemento HTML se convierte en un <strong>objeto</strong>del DOM.
+                <br>
+                El DOM es muy importante porque <strong>permite</strong> a las y los desarrolladores web <strong>interactuar y manipular los elementos HTML de una página web utilizando JavaScript</strong>. Es decir, a través del DOM, podemos acceder y
+                modificar el contenido, atributos y estilos de los elementos de una página web.
+                <br>
+                Entrá en el siguiente Power para interiorizarte y conocer mucho más del DOM...
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1tmXoCLjWGHc-fMpU_Ez7DoKXEKTCqzMn/view?pli=1"
+                    target="_blank">Powerpoint -
+                    Introducción al DOM</a>
+            </p>
+            <h4 class="m-h4-1">Desde el DOM al HTML...</h4>
+            <p class="m-p-2">Ahora que ya sabemos como acceder al DOM, determinamos cómo se ven sus ramas por dentro con
+                <strong>console.dir(document);</strong> , el siguiente paso será <strong>elegir</strong> un elemento de este árbol de elementos que
+                representa a todo el archivo HTML de la página web para que podamos manipularlo desde Javascript. Para
+                <strong>seleccionar</strong> elementos del HTML desde Javascript <strong>tenemos varios métodos</strong>. Podemos elegirlos por su id, por su class o su nombre (li, div, section, h2, etc). Existen varios métodos para realizar esta selección.
+                <br>
+                <strong>getElementBy()</strong> es un método en JavaScript que se utiliza para <strong>seleccionar elementos HTML dentro de </strong> un
+                documento. Este
+                método toma como parámetro el nombre de la etiqueta HTML o el valor del atributo "id" que deseas
+                seleccionar y devuelve
+                un objeto que representa el elemento HTML seleccionado.
+                <br>
+                Existen otras maneras de seleccionar elementos del HTML desde JavaScript. Te invitamos a ver la
+                siguiente presentación
+                para conocerlos y poner en práctica sus ejemplos.
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1O4jqH5s9pPYgNEoillIYXBezHc2nhDsT/view"
+                    target="_blank">Powerpoint - Seleccionar objetos del DOM</a>
+            </p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-2">querySelector:</h3>
+            <p class="m-p-3"><strong>querySelector()</strong> es un método en JavaScript que nos permite seleccionar
+                elementos de una página web utilizando CSS
+                selectors. Este método podemos utilizarlo para <strong>seleccionar elementos del HTML</strong> y <strong>guardarlos en una
+                constante para que
+                esté siempre disponible en JavaScript</strong>. Una vez que tenemos seleccionado el elemento que nos interesa
+                utilizando
+                querySelector, podremos modificar sus características de CSS pero desde JavaScript. Para esto se utiliza
+                la propiedad
+                style.
+                <br>
+                Pero no nos quedemos sólo con esta información. Para conocer más formas de utilizar querySelector y ver
+                más ejemplos,
+                poder ver la siguiente presentación...
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1UDJLFeqU4HyBdUz2OqjQ0f5NuoBmq9LV/view?pli=1"
+                    target="_blank">Powerpoint - DOM y querySelector()</a>
+            </p>
+            <h4 class="m-h4-2">Repasando más propiedades con querySelector...</h4>
+            <p class="m-p-4">La función querySelector() en JavaScript, como mencionamos en el tema anterior, permite
+                seleccionar un elemento HTML utilizando selectores y luego acceder a sus propiedades a través del objeto
+                resultante. Revisemos su <strong>estructura</strong>:</p>
+            <img src="/img/estructura-querySelector.png" alt="Estructura querySelector" id="imgqueryselector">
+            <p class="m-p-5">Además de modificar características y propiedades visuales de los elementos con CSS y desde
+                Javascript, también podemos crear elementos, sumarlos al HTML, e incluso eliminarlos, modificar sus
+                clases asignadas, cambiar su contenido y mucho
+                más. Esto es posible gracias a propiedades que se habilitan en Javascript con el uso de querySelector y
+                dichas propiedades se aplican luego en aquellos elementos que estamos seleccionando. En el tema anterior
+                conocimos muchas de ellas, pero acá te compartimos las <strong>propiedades más comunes</strong> y ejercicios prácticos
+                con su implementación:</p>
+            <ul class="m-ul-1">
+                <li><strong>classList:</strong> Es una propiedad que permite manipular las clases CSS de un elemento de
+                    manera sencilla, proporcionando métodos para agregar, eliminar y verificar clases en un elemento
+                    HTML. Algunos métodos comunes son `add` para agregar una clase, `remove` para eliminar una clase,
+                    `toggle` para alternar una clase y `contains` para verificar si un elemento tiene una clase
+                    específica.</li>
+                <li><strong>textContent:</strong> Es una propiedad que se utiliza para acceder al contenido de texto de
+                    un elemento HTML y modificarlo. Al acceder a textContent, obtendremos una representación de texto
+                    plano de todos los contenidos de texto dentro del elemento, incluyendo cualquier espacio en blanco o
+                    saltos de línea. La diferencia con innerHTML es que este últimos nos devolverá tanto el contenido de
+                    texto como las etiquetas HTML dentro del elemento. Por ejemplo, si tienes un elemento div con
+                    contenido HTML dentro, al acceder a innerHTML obtendrás todo el contenido, incluyendo las etiquetas
+                    y su contenido interno. Por otro lado, la propiedad textContent devuelve o establece el contenido de
+                    texto sin formato de un elemento, excluyendo cualquier etiqueta HTML dentro del elemento. Si accedes
+                    a textContent, obtendrás solo el contenido de texto plano sin ninguna estructura HTML. Esto es útil
+                    cuando solo necesitas trabajar con el texto en sí y no te importan las etiquetas HTML.</li>
+                <li><strong>innerHTML:</strong>Es una propiedad que representa el contenido HTML dentro de un elemento.
+                    Permite acceder y modificar el contenido HTML interno de un elemento, incluyendo etiquetas, texto y
+                    otros elementos HTML anidados. Al asignar un valor a `innerHTML`, se reemplaza todo el contenido
+                    anterior del elemento. Por ejemplo, el contenido de un elemento p es un texto. Lo que podemos hacer
+                    con esta propiedad es modificar el texto que contiene ese elemento desde Javascript. </li>
+                <li><strong>setAttribute:</strong> Es un método que permite establecer un atributo en un elemento HTML.
+                    Toma dos argumentos: el nombre del atributo y su valor. Puede utilizarse para establecer o modificar
+                    cualquier atributo en un elemento, como `src`, `href`, `class`, etc.</li>
+                <li><strong>getAttribute:</strong> Es un método que permite obtener el valor de un atributo específico
+                    de un elemento HTML. Toma un argumento que es el nombre del atributo que se desea obtener. Por
+                    ejemplo: elemento.getAttribute('src')` devolverá el valor del atributo "src" del elemento.</li>
+                <li><strong>appendChild:</strong> Método que se utiliza en JavaScript para agregar un nuevo elemento
+                    (nodo) como hijo de otro elemento existente en el DOM (Documento de Objetos del Modelo). Lo
+                    importante a tener en cuenta con este método es que el nuevo elemento que se agregue se suma al
+                    final de una lista de elementos contenidos en un “padre".</li>
+            </ul>
+            <p class="m-p-6"> Ahora que tenés una referencia teórica, pongámoslo en práctica. En la siguiente
+                presentación vas a encontrar ejemplos de las propiedades que te mencionamos antes pero en su estructura
+                Java Script para que veas su estructura en detalle y así apreciar los resultados finales de cada
+                propiedad.
+                <br><br>
+                <a
+                    href="https://docs.google.com/presentation/d/16MZqJH53foQ_8ngxuv5qndeqX2PM_pWvKom8jMOZ7Iw/edit#slide=id.g245d60de919_0_0" target="_blank">GoogleSlides
+                    - Ejemplos con querySelector y propiedades</a>
+            </p>
+        </section>
+
+        <section>
+            <h3 class="m-h3-3">querySelectorAll:</h3>
+            <p class="m-p-7">Como habrás notado en temas anteriores, getElementBy() solo selecciona el primer elemento
+                HTML que coincide con el parámetro de búsqueda. Si deseas seleccionar <strong>todos los elementos que coinciden
+                con la búsqueda</strong>, debes
+                utilizar <strong>querySelectorAll()</strong>.Lo que devuelve este último método se lo conoce como <strong>NodeList</strong>. Un NodeList
+                es un
+                <strong>objeto que representa una colección de elementos HTML en el orden en que aparecen en el documento</strong>. Es
+                similar a un
+                array en su sintaxis, pero no tiene todos los métodos de un array, como el método "push" o "pop".
+                <br>
+                querySelectorAll() lo utilizamos entonces para <strong>seleccionar varios elementos del DOM que cumplen con
+                ciertos criterios</strong> y, a continuación, <strong>manipularlos mediante programación</strong>. Además de poder modificarlos,
+                al devolvernos algo
+                similar a un array nos permite recorrerlo con un for. Esto puede ser útil, por ejemplo, para cambiar el
+                estilo de varios
+                elementos al mismo tiempo, para agregar o quitar clases a un grupo de elementos, o para agregar event
+                listeners a múltiples
+                elementos de manera eficiente. Para ver cómo se utiliza, veamos la siguiente presentación.
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1EYiDb6cqRqUoGDiDTP54qzwoUGs6uXdU/view" target="_blank">Powerpoint -
+                    querySelectorAll()</a>
+            </p>
+        </section>
+
+        <div id="button-up">
+            <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <img src="/img/instagram.png" alt="logo instagram" id="logoinstagram">
+
+        <a href="https://www.instagram.com/gianndevita/" target="_blank" id="enlaceig">the creator</a>
+
+        <img id="colorbarf" src="/img/barradecolores.png" alt="barradecolores">
+    </footer>
+        
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1291310e13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
